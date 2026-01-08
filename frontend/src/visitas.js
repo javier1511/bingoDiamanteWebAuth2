@@ -31,7 +31,7 @@ class Popup {
 }
 
 const getPlayers = async () => {
-  const response = await fetch('http://localhost:3000/player');
+  const response = await fetch('https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player');
 
   if (!response.ok) {
     console.error("Error al obtener players", response.statusText);
@@ -145,7 +145,7 @@ searchVisitasButton.addEventListener("click", async (event) => {
     }
 
     try {
-        const response =  await fetch(`http://localhost:3000/count?fechaInicio=${starDate.value}&fechaFin=${endDate.value}&playerId=${idInput.value}`)
+        const response =  await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/count?fechaInicio=${starDate.value}&fechaFin=${endDate.value}&playerId=${idInput.value}`)
 
         if(!response.ok) {
             alert("jugador no encontrado")

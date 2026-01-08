@@ -87,7 +87,7 @@ dataButton.addEventListener("click", async (event) => {
   try {
     const mobile = mobileInput.value.trim();
     const response = await fetch(
-      `http://localhost:3000/player/mobile/${mobile}`
+      `https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player/mobile/${mobile}`
     );
 
     if (!response.ok) {
@@ -161,7 +161,7 @@ modalButton.addEventListener("click", async (event) => {
     };
 
     const response = await fetch(
-      `http://localhost:3000/player/${modalId.value}`,
+      `https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player/${modalId.value}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },

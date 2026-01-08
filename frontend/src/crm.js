@@ -49,7 +49,7 @@ const modalVisits = document.querySelector("#modalVisits")
 // FETCH PLAYERS
 // ===============================
 const getPlayers = async () => {
-  const response = await fetch("http://localhost:3000/player");
+  const response = await fetch("https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player");
 
   if (!response.ok) {
     console.error("Error al obtener players", response.statusText);
@@ -199,7 +199,7 @@ const sendSmsToFilteredMobiles = async () => {
   try {
     sendSmsButton.disabled = true;
 
-    const response = await fetch("http://localhost:3000/sendsms", {
+    const response = await fetch("https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/sendsms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

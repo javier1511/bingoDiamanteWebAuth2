@@ -1,14 +1,14 @@
 import "./styles/index.css"
 import closeImg from "./images/close_40dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png"
 import logoImg from "./images/DiamanteCasino.png"
-
+  const logo =  document.querySelector(".main__title-image")
+    logo.src = logoImg
 const registerButton = document.querySelector('#registerButton');
    const registermMobile = document.querySelector('#mobile')
     const registerName = document.querySelector('#name')
     const registroFecha = document.querySelector('#date')
     const registroHora = document.querySelector('#time');
-    const logo =  document.querySelector(".main__title-image")
-    logo.src = logoImg
+  
 
 
 
@@ -80,7 +80,7 @@ if(formError.length > 0) {
         }
     
 
-        const response = await fetch(`http://localhost:3000/player/signup`, {
+        const response = await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player/signup`, {
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -205,7 +205,7 @@ const modalMobile = document.querySelector("#modalMobile")
 const modalName = document.querySelector("#modalName")
 
 const getPlayers = async () => {
-  const response = await fetch('http://localhost:3000/player');
+  const response = await fetch('https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player');
 
   if (!response.ok) {
     console.error("Error al obtener players", response.statusText);
@@ -354,7 +354,7 @@ visitButton.addEventListener('click', async (event) => {
      
         };
 
-    const response = await fetch(`http://localhost:3000/player/signin`, {
+    const response = await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player/signin`, {
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
