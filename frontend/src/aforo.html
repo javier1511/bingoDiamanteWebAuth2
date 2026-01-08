@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aforo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="aforo">
+
+        <div class="main__title-container">
+            <img src="./DiamanteCasino.png" alt="" class="main__title-image">
+        </div>
+         <div class="main__menu-container">
+            <a href="./index.html" class="main__menu">PRINCIPAL</a>
+            <a href="./datos.html" class="main__menu">MIS DATOS</a>
+            <a href="./visitas.html" class="main__menu">MIS VISITAS</a>
+            <a href="./aforo.html" class="main__menu">AFORO</a>
+            <a href="./crm.html" class="main__menu">CRM</a>
+
+
+        </div>
+            <div class="main__register-title-container">
+                <h1 class="main__register-title">AFORO</h3>
+            </div>
+
+            <div class="aforo__input-container">
+                <label for="" class="aforo__label">Fecha inicial</label>
+                <input id="fechaInicialAforoInput" type="date" class="aforo__input">
+                <label for="" class="aforo__label">Fecha final</label>
+                <input id="fechaFinalAforoInput"  type="date" class="aforo__input">
+                <button class="aforo__input-button">Buscar</button>
+            </div>
+
+            <div class="aforo__headers-container">
+                <p class="aforo__headers">Fecha</p>
+                <p class="aforo__headers">Total</p>
+            </div>
+
+            <div class="aforo__fetch"></div>
+
+    </div>
+
+    <script src="./aforo.js"></script>
+</body>
+</html>

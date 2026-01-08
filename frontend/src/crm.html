@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="crm">
+
+         <div class="main__title-container">
+            <img src="./DiamanteCasino.png" alt="" class="main__title-image">
+        </div>
+         <div class="main__menu-container">
+            <a href="./index.html" class="main__menu">PRINCIPAL</a>
+            <a href="./datos.html" class="main__menu">MIS DATOS</a>
+            <a href="./visitas.html" class="main__menu">MIS VISITAS</a>
+            <a href="./aforo.html" class="main__menu">AFORO</a>
+            <a href="./crm.html" class="main__menu">CRM</a>
+
+
+        </div>
+            <div class="main__register-title-container">
+                <h1 class="main__register-title">CRM</h3>
+            </div>
+
+
+                 <div class="crm__modal-main">
+   
+            <div class="visit__modal">
+                  <div class="visit__modal-title-container">
+                <h3 class="visit__modal-title">CRM</h3>
+            </div>
+            <div class="visit__modal-input-container">
+                <input id="modalName" placeholder="Buscar por nombre" type="text" class="visit__modal-input">
+                <input id="modalMobile" placeholder="Buscar por Celular" type="number" class="visit__modal-input">
+                                <input id="modalVisits" placeholder="Buscar por visitas" type="number" class="visit__modal-input">
+
+                <button class="visit__modal-button">Abrir crm</button>
+            </div>
+
+            <div class="visit__modal-data-container">
+                <div class="visit__modal-data-headers-container visit__modal-data-headers-container-modifier">
+                <p class="visit__modal-data">Nombre</p>
+                <p class="visit__modal-data">Telefono</p>
+                <p class="visit__modal-data">Total visitas</p>
+
+                </div>
+                <div class="visit__modal-data-fetch-container visit__modal-data-fetch-container-modifier">
+
+                </div>
+             
+
+            </div>
+
+            </div>
+          
+        </div>
+
+
+           <div class="mobile__modal">
+            <div class="visit__modal-close-container">
+                <img src="./close_40dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="" class="visit__modal-close">
+            </div>
+            <div class="mobile__modal-title-container">
+                <h3 class="mobile__modal-title">Envio masivo de SMS</h3>
+            </div>
+            <div class="mobile__modal-data-container">
+
+            </div>
+
+            <div class="mobile__modal-input-container">
+
+                <input placeholder="maximo 159 caracteres" maxlength="159" type="text" class="mobile__modal-input">
+                
+            </div>
+
+            <button class="mobile__modal-button">Enviar</button>
+        </div>
+
+    </div>
+    <script src="./crm.js"></script>
+</body>
+</html>

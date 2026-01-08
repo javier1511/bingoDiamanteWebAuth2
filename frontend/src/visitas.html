@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitas</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="visitas__container">
+
+         <div class="main__title-container">
+            <img src="./DiamanteCasino.png" alt="" class="main__title-image">
+        </div>
+         <div class="main__menu-container">
+            <a href="./index.html" class="main__menu">PRINCIPAL</a>
+            <a href="./datos.html" class="main__menu">MIS DATOS</a>
+            <a href="./visitas.html" class="main__menu">MIS VISITAS</a>
+            <a href="./aforo.html" class="main__menu">AFORO</a>
+            <a href="./crm.html" class="main__menu">CRM</a>
+
+
+        </div>
+        <div class="main__register-title-container">
+                <h1 class="main__register-title">MIS VISITAS</h3>
+            </div>
+
+            <div class="visitas__input-container">
+                <input placeholder="Celular" id="visitasInputMobile" type="text" class="visitas__input">
+            <input placeholder="Id" id="visitasInputId" type="text" class="visitas__input">
+
+                <label for="" class="visitas__input-label">Fecha inicio</label>
+                <input id="visitaInputDateStart" type="date" class="visitas__input">
+                <label for="" class="visitas__input-label">Fecha final</label>
+                <input id="visitaInputDateEnd" type="date" class="visitas__input">
+                <button class="visitas__button">Buscar</button>
+            </div>
+            <div class="visitas__headers-container">
+                <p class="visitas__headers">Total</p>
+                <p class="visitas__headers">Fechas</p>
+        
+                
+
+            </div>
+            <div class="visitas__fetch-container">
+               
+                
+
+            </div>
+
+
+                 <div class="visit__modal-main">
+            <div class="visit__modal-close-container">
+                <img src="./close_40dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="" class="visit__modal-close">
+            </div>
+            <div class="visit__modal">
+                  <div class="visit__modal-title-container">
+                <h3 class="visit__modal-title">Mis datos</h3>
+            </div>
+            <div class="visit__modal-input-container">
+                <input id="modalName" placeholder="Buscar por nombre" type="text" class="visit__modal-input">
+                <input id="modalMobile" placeholder="Buscar por Celular" type="number" class="visit__modal-input">
+            </div>
+
+            <div class="visit__modal-data-container">
+                <div class="visit__modal-data-headers-container">
+                <p class="visit__modal-data">Nombre</p>
+                <p class="visit__modal-data">Telefono</p>
+
+                </div>
+                <div class="visit__modal-data-fetch-container">
+
+                </div>
+             
+
+            </div>
+
+            </div>
+          
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./visitas.js"></script>
+</body>
+</html>
