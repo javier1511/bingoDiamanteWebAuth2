@@ -14,9 +14,14 @@ import closeImg from "./images/close_40dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png"
 class Popup {
   constructor(selector) {
     this.selector = selector;
-    this.overlay = document.createElement("div");
-    this.overlay.classList.add("overlay");
-    document.body.appendChild(this.overlay);
+
+    // Reutiliza overlay existente si ya existe
+    this.overlay = document.querySelector(".overlay");
+    if (!this.overlay) {
+      this.overlay = document.createElement("div");
+      this.overlay.classList.add("overlay");
+      document.body.appendChild(this.overlay);
+    }
   }
 
   open() {
@@ -29,6 +34,7 @@ class Popup {
     this.overlay.classList.remove("active");
   }
 }
+
 
 const getPlayers = async () => {
   const response = await fetch('http://localhost:3000/player');

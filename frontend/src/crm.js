@@ -1,4 +1,5 @@
 import "./styles/index.css"
+import closeImg from "./images/close_40dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png"
 import logoImg from "./images/DiamanteCasino.png"
   const logo =  document.querySelector(".main__title-image")
     logo.src = logoImg
@@ -12,9 +13,14 @@ let mobilesArray = []; // aquí guardaremos SOLO los mobiles filtrados (+52)
 class Popup {
   constructor(selector) {
     this.selector = selector;
-    this.overlay = document.createElement("div");
-    this.overlay.classList.add("overlay");
-    document.body.appendChild(this.overlay);
+
+    // Reutiliza overlay existente si ya existe
+    this.overlay = document.querySelector(".overlay");
+    if (!this.overlay) {
+      this.overlay = document.createElement("div");
+      this.overlay.classList.add("overlay");
+      document.body.appendChild(this.overlay);
+    }
   }
 
   open() {
@@ -28,6 +34,7 @@ class Popup {
   }
 }
 
+
 // ===============================
 // ELEMENTOS DOM
 // ===============================
@@ -38,6 +45,7 @@ const dataContainer = document.querySelector(".visit__modal-data-fetch-container
 
 const crmButton = document.querySelector(".visit__modal-button");
 const closeMobileModal = document.querySelector(".visit__modal-close");
+closeMobileModal.src = closeImg
 
 // IMPORTANTE: estos inputs deben existir en tu HTML
 // Si tus IDs/clases son distintos, cámbialos aquí
