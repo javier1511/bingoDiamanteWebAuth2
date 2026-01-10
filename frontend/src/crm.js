@@ -111,6 +111,12 @@ const displayPlayers = async () => {
 
   mobilesArray = filtered.map((player) => `+52${String(player.mobile || "").trim()}`);
 
+  // 🔎 CONTEO TOTAL
+console.log("📱 mobilesArray (total):", mobilesArray.length);
+console.log("📱 mobilesArray:", mobilesArray);
+const subtitlesMobilesArray =  document.querySelector(".mobile__modal-subtitle")
+subtitlesMobilesArray.textContent = mobilesArray.length
+
   const html = filtered
     .map((player) => {
       const name = player.name || "";
@@ -176,6 +182,7 @@ displayPlayers();
 // ===============================
 const smsTextInput = document.querySelector(".mobile__modal-input");
 const sendSmsButton = document.querySelector(".mobile__modal-button");
+
 
 // ✅ lock anti doble envío (aunque haya doble click o doble listener)
 let isSending = false;

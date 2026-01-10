@@ -446,6 +446,12 @@ input:focus {
 text-align: center;
 }
 
+.mobile__modal-data-container{
+            height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 
 .popup__opened {
     opacity: 1;
