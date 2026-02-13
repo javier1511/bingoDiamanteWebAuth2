@@ -5,6 +5,7 @@ import playerRoutes from './routes/player.routes'
 import loginDailyRoutes from './routes/loginDaily.routes'
 import loginsPorFechaRoutes from './routes/logingPorFecha.routes'
 import smsRoutes from "./routes/sms.routes"
+import loginsByDay from "./routes/loginsByDay.routes"
 
 
 const app = express();
@@ -19,6 +20,7 @@ app.use('/player', playerRoutes)
 app.use('/count', loginDailyRoutes )
 app.use('/logins', loginsPorFechaRoutes)
 app.use('/sendsms', smsRoutes)
+app.use('/loginsByDay', loginsByDay)
 
 
 app.get('/', (req, res) => {
