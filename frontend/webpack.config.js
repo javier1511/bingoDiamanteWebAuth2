@@ -14,6 +14,7 @@ module.exports = {
     visitas: "./src/visitas.js",
     datos: "./src/datos.js",
     crm: "./src/crm.js",
+    logins: "./src/logins.js"
   },
 
   output: {
@@ -85,6 +86,11 @@ module.exports = {
       filename: "crm.html",
       template: "./src/crm.html",
       chunks: ["crm"],
+    }),
+      new HtmlWebpackPlugin({
+      filename: "logins.html",
+      template: "./src/logins.html",
+      chunks: ["logins"],
     }),
 
     // limpia dist en cada build

@@ -453,6 +453,28 @@ text-align: center;
 }
 
 
+.logins__input-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.logins__headers-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: solid 1px gainsboro;
+}
+
+.logins__data-container{
+        display: grid;
+    grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+}
+
+
 .popup__opened {
     opacity: 1;
     visibility: visible;
