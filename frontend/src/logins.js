@@ -15,7 +15,7 @@ const getLogins =  async () => {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/loginsByDay?fecha=${dateInput.value}`
+            `https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/loginsByDay?fecha=${dateInput.value}`
         )
 
         const data = await response.json()
