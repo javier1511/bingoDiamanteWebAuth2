@@ -3,62 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cortesias</title>
 </head>
 <body>
-    <div class="main">
-
-      
-
+    <div class="cortesias">
         <div class="main__title-container">
             <img src="" alt="" class="main__title-image">
         </div>
-          <div class="main__menu-container">
- <a href="./index.html" class="main__menu">PRINCIPAL</a>
+         <div class="main__menu-container">
+            <a href="./index.html" class="main__menu">PRINCIPAL</a>
             <a href="./datos.html" class="main__menu">MIS DATOS</a>
             <a href="./visitas.html" class="main__menu">MIS VISITAS</a>
             <a href="./aforo.html" class="main__menu">AFORO</a>
             <a href="./crm.html" class="main__menu">CRM</a>
             <a href="./logins.html" class="main__menu">VISITAS POR FECHA</a>
             <a href="./cortesias.html" class="main__menu">CORTESIAS</a>
-                         <a href="./cortesiasPorCliente.html" class="main__menu">CORTESIAS POR CLIENTE</a>
-                                  <a href="./reporteDeCortesias.html" class="main__menu">REPORTE DE CORTESIAS</a>
+                                     <a href="./cortesiasPorCliente.html" class="main__menu">CORTESIAS POR CLIENTE</a>
+                                              <a href="./reporteDeCortesias.html" class="main__menu">REPORTE DE CORTESIAS</a>
 
 
 
 
         </div>
+           
 
-        <div class="main__register">
-            <div class="main__register-title-container">
-                <h1 class="main__register-title">REGISTRO</h3>
-            </div>
-
-            <div class="main__register-date-container">
-                <input id="date" placeholder="Fecha" type="date" class="main__register-date" readonly>
-                <input id="time" placeholder="Hora" type="text" class="main__register-date">
-            </div>
-
-            <div class="main__register-input-container">
-                        <input id="name" placeholder="Nombre completo" type="text" class="main__register-input">
-                        <input id="mobile" placeholder="Celular" type="number" class="main__register-input">
-                        <button id="registerButton" class="main__register-button">Registrarme</button>
-                        <div class="register__errorMessages" id="errorMessages" style="color: red;"></div>
-            </div>
-
-
-                    
-        </div>
-
-
-
-        <div class="main__visit">
+             <div class="main__visit">
              <div class="main__register-title-container">
-                <h1 class="main__register-title main__register-title-visit">VISITAS</h3>
+                <h1 class="main__register-title main__register-title-visit">CORTESIAS</h3>
             </div>
 
             <div class="main__visit-date-container">
-                                <input id="dateVisit" placeholder="Fecha" type="date" class="main__register-date" readonly>
+                <input id="dateVisit" placeholder="Fecha" type="date" class="main__register-date" readonly>
                 <input id="timeVisit" placeholder="Hora" type="text" class="main__register-date">
 
             </div>
@@ -66,10 +41,12 @@
             <div class="main__visit-input-container">
                 <input id="mobileVisit" placeholder="Celular" type="number" class="main__register-input">
                                         <input id="nameVisit" placeholder="Nombre completo" type="text" class="main__register-input">
+                <input id="idCortesias" placeholder="Total cortesias" type="number" class="main__register-input" value="1" readonly>
+
                                                                                 <input id="idVisit" placeholder="id" type="text" class="" readonly>
 
 
-                        <button id="visitButton" class="main__register-button">Registrar visita</button>
+                        <button id="cortesiasButton" class="main__register-button">Registrar cortesia</button>
                         <div class="register__errorMessages" id="errorMessagesVisit" style="color: red;"></div>
 
             </div>
@@ -111,6 +88,6 @@
         </div>
 
     </div>
-
+    
 </body>
 </html>

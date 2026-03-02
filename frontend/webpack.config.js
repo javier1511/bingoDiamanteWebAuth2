@@ -14,7 +14,10 @@ module.exports = {
     visitas: "./src/visitas.js",
     datos: "./src/datos.js",
     crm: "./src/crm.js",
-    logins: "./src/logins.js"
+    logins: "./src/logins.js",
+    cortesias:"./src/cortesias.js",
+    cortesiasPorCliente:"./src/cortesiasPorCliente.js",
+    reporteDeCortesias:"./src/reporteDeCortesias.js"
   },
 
   output: {
@@ -91,6 +94,21 @@ module.exports = {
       filename: "logins.html",
       template: "./src/logins.html",
       chunks: ["logins"],
+    }),
+     new HtmlWebpackPlugin({
+      filename: "cortesias.html",
+      template: "./src/cortesias.html",
+      chunks: ["cortesias"],
+    }),
+      new HtmlWebpackPlugin({
+      filename: "cortesiasPorCliente.html",
+      template: "./src/cortesiasPorCliente.html",
+      chunks: ["cortesiasPorCliente"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "reporteDeCortesias.html",
+      template: "./src/reporteDeCortesias.html",
+      chunks: ["reporteDeCortesias"],
     }),
 
     // limpia dist en cada build

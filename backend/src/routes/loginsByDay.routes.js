@@ -6,4 +6,4 @@ import { getLoginsByDay } from "../controllers/loginsByDay.controller";
 
 router.get("/", getLoginsByDay)
 
-export default router
+export default router;

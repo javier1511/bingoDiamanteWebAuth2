@@ -6,6 +6,7 @@ import loginDailyRoutes from './routes/loginDaily.routes'
 import loginsPorFechaRoutes from './routes/logingPorFecha.routes'
 import smsRoutes from "./routes/sms.routes"
 import loginsByDay from "./routes/loginsByDay.routes"
+import cortesiasRoutes from "./routes/cortesias.routes"
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/count', loginDailyRoutes )
 app.use('/logins', loginsPorFechaRoutes)
 app.use('/sendsms', smsRoutes)
 app.use('/loginsByDay', loginsByDay)
+app.use('/cortesias', cortesiasRoutes)
 
 
 app.get('/', (req, res) => {
