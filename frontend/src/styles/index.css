@@ -474,6 +474,30 @@ text-align: center;
       text-align: center;
 }
 
+.cortesias__headers-container{
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+      text-align: center; 
+}
+
+.cortesias__fetch-container{
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+      text-align: center; 
+}
+
+.reporte__cortesias-headers-container{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+}
+
+.reporte__cortesias-fetch{
+       display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+}
+
 
 .popup__opened {
     opacity: 1;

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aforo</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Reporte de cortesias</title>
 </head>
 <body>
 
@@ -21,7 +20,6 @@
             <a href="./crm.html" class="main__menu">CRM</a>
             <a href="./logins.html" class="main__menu">VISITAS POR FECHA</a>
                         <a href="./cortesias.html" class="main__menu">CORTESIAS</a>
-
     <a href="./cortesiasPorCliente.html" class="main__menu">CORTESIAS POR CLIENTE</a>
              <a href="./reporteDeCortesias.html" class="main__menu">REPORTE DE CORTESIAS</a>
 
@@ -31,7 +29,7 @@
 
         </div>
             <div class="main__register-title-container">
-                <h1 class="main__register-title">AFORO</h3>
+                <h1 class="main__register-title">REPORTE DE CORTESIAS</h3>
             </div>
 
             <div class="aforo__input-container">
@@ -42,15 +40,16 @@
                 <button class="aforo__input-button">Buscar</button>
             </div>
 
-            <div class="aforo__headers-container">
+            <div class="aforo__headers-container reporte__cortesias-headers-container">
                 <p class="aforo__headers">Fecha</p>
-                <p class="aforo__headers">Total</p>
+                <p class="aforo__headers">Jugadores unicos</p>
+                <p class="aforo__headers">Total Cortesias</p>
             </div>
 
-            <div class="aforo__fetch"></div>
+            <div class="aforo__fetch reporte__cortesias-fetch"></div>
 
     </div>
 
-    <script src="./aforo.js"></script>
+
 </body>
 </html>
