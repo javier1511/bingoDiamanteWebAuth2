@@ -89,7 +89,7 @@ const modalMobile = document.querySelector("#modalMobile")
 const modalName = document.querySelector("#modalName")
 
 const getPlayers = async () => {
-  const response = await fetch('http://localhost:3000/player');
+  const response = await fetch('https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player');
 
   if (!response.ok) {
     console.error("Error al obtener players", response.statusText);
@@ -250,7 +250,7 @@ cortesiasButton.addEventListener('click', async (event) => {
      
         };
 
-    const response = await fetch(`http://localhost:3000/cortesias`, {
+    const response = await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/cortesias`, {
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

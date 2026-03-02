@@ -37,7 +37,7 @@ class Popup {
 
 
 const getPlayers = async () => {
-  const response = await fetch('http://localhost:3000/player');
+  const response = await fetch('https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/player');
 
   if (!response.ok) {
     console.error("Error al obtener players", response.statusText);
@@ -57,8 +57,7 @@ console.log("dataFetch:", dataFetch);
 
 
 
-const starDate = document.querySelector("#visitaInputDateStart")
-const endDate = document.querySelector("#visitaInputDateEnd")
+
 const container = document.querySelector(".visit__modal-main")
 const dataContainer = document.querySelector(".visit__modal-data-fetch-container")
 
@@ -154,7 +153,7 @@ searchVisitasButton.addEventListener("click", async (event) => {
     console.log("idInput.value:", idInput.value);
 
     try {
-        const response =  await fetch(`http://localhost:3000/cortesias/${idInput.value}`)
+        const response =  await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/cortesias/${idInput.value}`)
 
         if(!response.ok) {
             alert("jugador no encontrado")
