@@ -33,7 +33,7 @@ searchAforoButton.addEventListener("click", async (event) => {
 
     try {
 
-        const response = await fetch(`http://localhost:3000/cortesias/reporte?fechaInicio=${starDate.value}&fechaFin=${endDate.value}`)
+        const response = await fetch(`https://bingotampicowebauth2-58a3ebcccca0.herokuapp.com/cortesias/reporte?fechaInicio=${starDate.value}&fechaFin=${endDate.value}`)
 
         if(!response.ok){
             alert("Sin datos");
