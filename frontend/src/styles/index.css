@@ -269,12 +269,18 @@ input:focus {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
+ 
+
+
 }
 
 .main__menu{
     text-decoration: none;
     color: #0056b3;
     font-weight: bold;
+    text-align: center;
+    font-size: 12px;
 }
 
 .data__container{
